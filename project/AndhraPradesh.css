@@ -1,0 +1,89 @@
+/* styles.css */
+
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f1e9;
+    color: #333;
+    padding-bottom: 60px; /* Ensure content is not hidden behind footer */
+}
+
+header {
+    background: #4a3c2d;
+    color: #f4f1e9;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 5px solid #d1b79b;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-style: italic;
+}
+
+main {
+    padding: 15px;
+    text-align: center;
+    /* Ensure space at bottom to avoid overlap with footer */
+    padding-bottom: 80px; 
+}
+
+.button-container {
+    margin: 20px auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2em;
+    color: #4a3c2d;
+    background: #d1b79b;
+    text-decoration: none;
+    border: 3px solid #4a3c2d;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: #b89c7b;
+    transform: scale(1.05);
+}
+
+.content-section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    border: 1px solid #d1b79b;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /* Add margin-bottom to ensure spacing above footer */
+    margin-bottom: 80px; /* Adjust as needed to clear the footer */
+}
+
+.content-section h2 {
+    margin-top: 0;
+    color: #4a3c2d;
+}
+
+footer {
+    background: #4a3c2d;
+    color: #f4f1e9;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #d1b79b;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    /* Ensure footer is above content */
+    z-index: 1000; 
+}
